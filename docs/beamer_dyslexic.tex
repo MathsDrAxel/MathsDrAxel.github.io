@@ -1,0 +1,25 @@
+\documentclass{beamer}
+
+\usepackage{fontspec}
+\newfontfamily\OD{OpenDyslexic}
+\setmainfont{OpenDyslexic}
+
+\everymath\expandafter{\the\everymath\it}
+\everydisplay\expandafter{\the\everydisplay\it}
+
+\setbeamerfont{normal text}{size=\fontsize{10}{10}\OD}
+\setbeamerfont{frametitle}{size=\fontsize{12}{14}\OD}
+\AtBeginDocument{\usebeamerfont{normal text}}
+
+\begin{document}
+
+\begin{frame}
+\frametitle{This is a title}
+
+Here is some text.
+Here is some display math stuff:
+\[ \int_a^b f(x) dx = F(b)-F(a) \]
+Here is some inline math stuff: $\int_a^b f(x) dx = F(b)-F(a)$
+\end{frame}
+
+\end{document}
