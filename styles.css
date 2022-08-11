@@ -117,6 +117,7 @@ body {
 
 #spacer  {
     height:             34px;
+    background-color:#0A4068;
 }
         
 #header  {
@@ -179,30 +180,39 @@ body {
     text-align:         center;
 }
 
-#cssmenu {
-	ul { 
-		list-style-type: none; 
-		margin: 0; 
-		padding: 0; 
-		overflow: hidden; 
-		background-color: #0A4068; }
-	li { 
-		float: left; }
-	li a { 
-		display: block; 
-		color: #E9B820; 
-		text-align: center; 
-		padding: 14px 16px; 
-		text-decoration: none;
-		border-right: 1px solid white; }
-	li:last-child{ 
-		border-right: none; }
-	li a:hover { 
-		background-color: #646469; }
-	.active{ 
-		background-color: #E9B820; 
-		color: #0A4068; }
+
+.cssmenu ul {
+	margin: 0; 
+	padding: 0; 
+	background-color: #0A4068;
+	display:flex;
 }
+.cssmenu li { 
+	float: left;
+}
+.cssmenu li a { 
+	color: #E9B820;
+	background-color: #0A4068;
+	text-align: center; 
+	padding: 0px 16px;
+	margin: 0px
+	text-decoration: none;
+	border-right: 1px solid white;
+	display:inline-block;
+	height:100%;
+}
+.cssmenu li:last-child { 
+	border-right: none; 
+}
+.cssmenu li a:hover { 
+	background-color: #b3b3b3;
+	color: #0A4068;
+}
+.cssmenu li .active{ 
+	background-color: #E9B820; 
+	color: #0A4068; 
+}
+
 
 /* -----------------------------------*/
 /* ---------->>> TABLES <<<-----------*/
